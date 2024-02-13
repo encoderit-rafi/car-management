@@ -3,6 +3,9 @@ import ReactDOM from "react-dom/client";
 import App from "@/App.tsx";
 import Login from "@/pages/login/Login";
 import Users from "@/pages/users/Users";
+import Profile from "@/pages/profile/Profile";
+import EditProfile from "@/pages/profile/EditProfile";
+import ChangePassword from "@/pages/password/ChangePassword";
 import UserDetails from "@/pages/users/UserDetails";
 import Cars from "@/pages/cars/Cars";
 import CarDetails from "@/pages/cars/CarDetails";
@@ -14,7 +17,9 @@ const router = createBrowserRouter([
     path: "/",
     element: <App />,
     errorElement: <ErrorPage />,
+
     children: [
+      { index: true, element: <Users /> },
       {
         path: "/users",
         element: <Users />,
@@ -30,6 +35,18 @@ const router = createBrowserRouter([
       {
         path: "cars/:id",
         element: <CarDetails />,
+      },
+      {
+        path: "profile",
+        element: <Profile />,
+      },
+      {
+        path: "edit-profile",
+        element: <EditProfile />,
+      },
+      {
+        path: "change-password",
+        element: <ChangePassword />,
       },
     ],
   },
