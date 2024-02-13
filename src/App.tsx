@@ -69,7 +69,7 @@ export default function App() {
           </div>
         </nav>
         <div className="flex flex-1">
-          <aside className="flex flex-col flex-1 max-w-64 ">
+          <aside className="flex flex-col flex-1 max-w-64">
             <ul className="flex-1">
               <NavLink to="/users">
                 <li className="flex items-center px-6 py-2 space-x-3 hover:bg-neutral-100 hover:cursor-pointer">

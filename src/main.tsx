@@ -1,4 +1,3 @@
-import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "@/App.tsx";
 import Login from "@/pages/login/Login";
@@ -12,6 +11,7 @@ import CarDetails from "@/pages/cars/CarDetails";
 import ErrorPage from "@/pages/error/ErrorPage.tsx";
 import "./main.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+
 const router = createBrowserRouter([
   {
     path: "/",

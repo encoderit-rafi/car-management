@@ -92,7 +92,11 @@ const Cars = () => {
     <Page
       title="Cars"
       action={
-        <Button variant="outline" className="space-x-2">
+        <Button
+          variant="outline"
+          className="space-x-2"
+          onClick={() => setOpenEditProfile(true)}
+        >
           <Plus className="w-4 h-4" />
           <span>Create</span>
         </Button>
